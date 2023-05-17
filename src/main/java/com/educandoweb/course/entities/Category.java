@@ -30,7 +30,6 @@ public class Category implements Serializable{
 	private Set<Product> products = new HashSet<>();
 	
 	public Category () {
-		
 	}
 
 	public Category(Long id, String name) {
@@ -75,13 +74,4 @@ public class Category implements Serializable{
 		Category other = (Category) obj;
 		return Objects.equals(id, other.id);
 	}
-
-
-
-
-	
-	
-	
-	
-
 }

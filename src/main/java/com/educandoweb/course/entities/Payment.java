@@ -49,7 +49,6 @@ public class Payment implements Serializable {
 	public Instant getMoment() {
 		return moment;
 	}
-
 	
 	public void setMoment(Instant moment) {
 		this.moment = moment;

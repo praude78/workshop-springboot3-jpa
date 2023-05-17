@@ -31,11 +31,8 @@ public class User implements Serializable{
 	@JsonIgnore
 	@OneToMany(mappedBy = "client")
 	private List<Order> orders = new ArrayList<>();
-	
-	
-	
+
 	private User() {
-		
 	}
 
 	public User(Long id, String name, String email, String phone , String password) {
@@ -107,13 +104,4 @@ public class User implements Serializable{
 		User other = (User) obj;
 		return Objects.equals(id, other.id);
 	}
-
-
-
-
-
-	
-	
-	
-
 }
